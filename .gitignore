@@ -1,5 +1,6 @@
 *.*-bak
 *-cache
--*cache.lib
-
-
+*-cache.lib
+*.net
+*.dsn
+*.ses
