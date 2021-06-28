@@ -1,0 +1,341 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Motorcycle voltage RGB indicator"
+Date "2021-06-26"
+Rev "1.0"
+Comp ""
+Comment1 "http://www.kn34pc.com/construct/kolo_hristov_av_rgb.html"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Isolator:4N37 U2
+U 1 1 60D6C8E8
+P 5650 2200
+F 0 "U2" H 5650 2525 50  0000 C CNN
+F 1 "4N37" H 5650 2434 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 5450 2000 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 5650 2200 50  0001 L CNN
+	1    5650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_BGAR #HL1
+U 1 1 60D7AE89
+P 7900 1550
+F 0 "#HL1" V 7946 1220 50  0000 R CNN
+F 1 "LED_BGAR" V 7855 1220 50  0000 R CNN
+F 2 "LED_SMD:LED_RGB_1210" H 7900 1500 50  0001 C CNN
+F 3 "~" H 7900 1500 50  0001 C CNN
+	1    7900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60D86B46
+P 5350 2650
+F 0 "R7" H 5420 2696 50  0000 L CNN
+F 1 "2.2k" H 5420 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5280 2650 50  0001 C CNN
+F 3 "~" H 5350 2650 50  0001 C CNN
+	1    5350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60D872B3
+P 5050 2700
+F 0 "R5" H 5120 2746 50  0000 L CNN
+F 1 "100k" H 5120 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4980 2700 50  0001 C CNN
+F 3 "~" H 5050 2700 50  0001 C CNN
+	1    5050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60D87B68
+P 5050 3100
+F 0 "R6" H 5120 3146 50  0000 L CNN
+F 1 "19.8k" H 5120 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4980 3100 50  0001 C CNN
+F 3 "~" H 5050 3100 50  0001 C CNN
+	1    5050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60D8CEC7
+P 4200 2650
+F 0 "R4" H 4270 2696 50  0000 L CNN
+F 1 "2.2k" H 4270 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4130 2650 50  0001 C CNN
+F 3 "~" H 4200 2650 50  0001 C CNN
+	1    4200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60D8D756
+P 3600 3100
+F 0 "R1" H 3670 3146 50  0000 L CNN
+F 1 "2.2k" H 3670 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3530 3100 50  0001 C CNN
+F 3 "~" H 3600 3100 50  0001 C CNN
+	1    3600 3100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5950 2100
+NoConn ~ 4800 2150
+$Comp
+L Device:R R3
+U 1 1 60D8C709
+P 3900 3100
+F 0 "R3" H 3970 3146 50  0000 L CNN
+F 1 "24.5k" H 3970 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3830 3100 50  0001 C CNN
+F 3 "~" H 3900 3100 50  0001 C CNN
+	1    3900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60D8C176
+P 3900 2700
+F 0 "R2" H 3970 2746 50  0000 L CNN
+F 1 "100k" H 3970 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3830 2700 50  0001 C CNN
+F 3 "~" H 3900 2700 50  0001 C CNN
+	1    3900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1200 6050 1200
+Wire Wire Line
+	5950 2200 6050 2200
+Wire Wire Line
+	6050 2200 6050 1750
+Connection ~ 6050 1200
+Wire Wire Line
+	6050 1200 4200 1200
+Wire Wire Line
+	5950 2300 5950 2400
+Wire Wire Line
+	5950 2400 5200 2400
+Wire Wire Line
+	5200 2400 5200 1800
+Wire Wire Line
+	5200 1800 4200 1800
+Wire Wire Line
+	4200 1800 4200 2150
+Wire Wire Line
+	4200 1600 4200 1800
+Connection ~ 4200 1800
+Wire Wire Line
+	5350 1650 5350 2100
+Wire Wire Line
+	4800 2250 4850 2250
+Wire Wire Line
+	4850 2250 4850 1750
+Wire Wire Line
+	4850 1750 5050 1750
+Connection ~ 6050 1750
+Wire Wire Line
+	6050 1750 6050 1200
+Wire Wire Line
+	5050 2550 5050 1750
+Connection ~ 5050 1750
+Wire Wire Line
+	5050 1750 6050 1750
+Wire Wire Line
+	5350 2300 5350 2500
+Wire Wire Line
+	5050 2850 5050 2900
+Wire Wire Line
+	5250 2900 5050 2900
+Connection ~ 5050 2900
+Wire Wire Line
+	5050 2900 5050 2950
+Wire Wire Line
+	3600 3250 3900 3250
+Connection ~ 3900 3250
+Wire Wire Line
+	3900 3250 4200 3250
+Connection ~ 5050 3250
+Wire Wire Line
+	5050 3250 5350 3250
+Wire Wire Line
+	5350 3000 5350 3250
+Connection ~ 5350 3250
+Wire Wire Line
+	5350 3250 6350 3250
+Wire Wire Line
+	4200 3000 4200 3250
+Connection ~ 4200 3250
+Wire Wire Line
+	4200 3250 5050 3250
+Wire Wire Line
+	3900 2950 3900 2900
+Wire Wire Line
+	4100 2900 3900 2900
+Connection ~ 3900 2900
+Wire Wire Line
+	3900 2900 3900 2850
+Wire Wire Line
+	3600 2950 3600 2450
+Wire Wire Line
+	3600 2450 4000 2450
+Wire Wire Line
+	4800 2450 4800 2350
+Wire Wire Line
+	3900 2550 3900 1750
+Wire Wire Line
+	3900 1750 3700 1750
+Wire Wire Line
+	3700 1750 3700 1200
+Wire Wire Line
+	3700 1200 4200 1200
+Connection ~ 4200 1200
+Wire Wire Line
+	4200 2500 4200 2350
+Connection ~ 4000 2450
+Wire Wire Line
+	4000 2450 4800 2450
+$Comp
+L Reference_Voltage:TL431DBZ DA1
+U 1 1 60DA7AB4
+P 4200 2900
+F 0 "DA1" V 4246 2830 50  0000 R CNN
+F 1 "TL431DBZ" V 4155 2830 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 2750 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 4200 2900 50  0001 C CIN
+	1    4200 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Reference_Voltage:TL431DBZ DA2
+U 1 1 60DA833F
+P 5350 2900
+F 0 "DA2" V 5396 2830 50  0000 R CNN
+F 1 "TL431DBZ" V 5305 2830 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5350 2750 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 5350 2900 50  0001 C CIN
+	1    5350 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 1450 4200 1200
+Wire Wire Line
+	4000 1250 4000 2450
+Wire Wire Line
+	4300 1600 4200 1600
+$Comp
+L Connector:Conn_01x04_Female #J2
+U 1 1 60DE168C
+P 7250 1600
+F 0 "#J2" H 7142 1793 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 7142 1884 50  0001 C CNN
+F 2 "" H 7250 1600 50  0001 C CNN
+F 3 "~" H 7250 1600 50  0001 C CNN
+	1    7250 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 1400 7700 1400
+Wire Wire Line
+	7700 1400 7700 1350
+Wire Wire Line
+	7450 1500 8100 1500
+Wire Wire Line
+	7450 1600 7700 1600
+Wire Wire Line
+	7700 1600 7700 1550
+Wire Wire Line
+	7450 1700 7700 1700
+Wire Wire Line
+	7700 1700 7700 1750
+Wire Wire Line
+	4700 1450 4700 1400
+Wire Wire Line
+	4200 1450 4700 1450
+Wire Wire Line
+	4700 1250 4700 1300
+Wire Wire Line
+	4000 1250 4700 1250
+Wire Wire Line
+	5350 1650 4700 1650
+Wire Wire Line
+	4300 1600 4300 1500
+Wire Wire Line
+	4300 1500 4700 1500
+$Comp
+L Isolator:4N37 U1
+U 1 1 60D6E360
+P 4500 2250
+F 0 "U1" H 4500 2575 50  0000 C CNN
+F 1 "4N37" H 4500 2484 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 4300 2050 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 4500 2250 50  0001 L CNN
+	1    4500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1650 4700 1600
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 60DC3C76
+P 4900 1500
+F 0 "J1" H 4872 1428 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 4872 1473 50  0001 R CNN
+F 2 "Connector_Wire:SolderWire-0.5sqmm_1x04_P4.6mm_D0.9mm_OD2.1mm" H 4900 1500 50  0001 C CNN
+F 3 "~" H 4900 1500 50  0001 C CNN
+	1    4900 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 60E23DD3
+P 6500 1300
+F 0 "J3" H 6472 1228 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 6472 1273 50  0001 R CNN
+F 2 "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm" H 6500 1300 50  0001 C CNN
+F 3 "~" H 6500 1300 50  0001 C CNN
+	1    6500 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 3250 6350 1450
+Wire Wire Line
+	6350 1450 6300 1450
+Wire Wire Line
+	6300 1450 6300 1300
+$Comp
+L power:+12C #PWR0101
+U 1 1 60E2986E
+P 6650 1200
+F 0 "#PWR0101" H 6650 1050 50  0001 C CNN
+F 1 "+12C" V 6665 1328 50  0000 L CNN
+F 2 "" H 6650 1200 50  0001 C CNN
+F 3 "" H 6650 1200 50  0001 C CNN
+	1    6650 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-12V #PWR0102
+U 1 1 60E2A804
+P 6650 1300
+F 0 "#PWR0102" H 6650 1400 50  0001 C CNN
+F 1 "-12V" V 6665 1428 50  0000 L CNN
+F 2 "" H 6650 1300 50  0001 C CNN
+F 3 "" H 6650 1300 50  0001 C CNN
+	1    6650 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 1500 8100 1550
+$EndSCHEMATC
