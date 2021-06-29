@@ -5,10 +5,10 @@ I've used the [Допълнение 1 schema](http://www.kn34pc.com/construct/ko
 
 The idea is to have green light between 12.5 and 15V and a warning light otherwise.
 
-![schema](v2021-06-28 18-28-10.png)
+![schema](v2021-06-28&#32;18-28-10.png)
  
 
-![pcb](pcb2021-06-28 18-56-17.png)
+![pcb](pcb2021-06-28&#32;18-56-17.png)
 
 
 
